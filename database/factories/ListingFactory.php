@@ -20,7 +20,7 @@ class ListingFactory extends Factory
         return [
             'user_id' => fake()->randomElement(User::pluck('id')),
             'title' => fake()->word(),
-            'description' => fake()->text(250),
+            'description' => fake()->text(350),
             'price' => fake()->numberBetween($min = 50, $max = 300),
             'location' => fake()->address(),
             'tags' => implode(',', fake()->words($nb = 3, $asText = false)),

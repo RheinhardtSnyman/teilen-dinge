@@ -1,3 +1,6 @@
+@extends('layout')
+
+@section('content')
     <h2>
         {{ $listing['title'] }}
     </h2>
@@ -5,8 +8,9 @@
         {{ $listing['decription'] }}
     </p>
     <p>
-       R {{ $listing['price'] }}
+        R {{ $listing['price'] }}
     </p>
     <p>
         {{ $listing['location'] }}
     </p>
+@endsection

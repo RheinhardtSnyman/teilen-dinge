@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.neumorphic {
+    border-radius: 25px;
+    background: #f6f5f4;
+    box-shadow: 7px 7px 14px #d1d0cf,
+        -7px -7px 14px #ffffff;
+}
+
+.min-with{
+    min-width: 360px;
+}
