@@ -10,7 +10,6 @@
 </head>
 
 <body class="min-with overflow-x-scroll">
-    <h1 class="flex justify-center text-5xl min-w-full text-white bg-black bg-opacity-40 p-4">teilenDinge</h1>
     @yield('content')
 </body>
 

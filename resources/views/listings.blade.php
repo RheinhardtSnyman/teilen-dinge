@@ -1,5 +1,7 @@
 @extends('layout')
 
+@include('components._hero')
+
 @section('content')
     <h2 class="text-left text-4xl m-5">{{ $heading }}</h2>
     <div id="card-section" class="flex flex-wrap">
