@@ -15,9 +15,14 @@
                     <div class="overflow-hidden w-full max-h-48 relative">
                         <img src="https://picsum.photos/300/200/?&random={{ $listing['id'] }}" class="w-full" />
                     </div>
-                        <p class="text-base p-5">
-                        {{ $listing['description'] }}
-                    </p>
+                        <div class="text-base p-5">
+                            <p>
+                                R {{ $listing['price'] }}
+                            </p>
+                            <p>
+                                {{ $listing['description'] }}
+                            </p>
+                        </div>
                     </span>
                 </a>
             </div>

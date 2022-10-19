@@ -20,9 +20,15 @@ use Illuminate\Support\Facades\Route;
 
 // All Listings
 Route::get('/', function () {
+    $listing = Listing::get()->map(function ($item, $key) {
+        $item['description'] = substr($item['description'], 0, 57).'...';
+
+        return $item;
+    })->all();
+
     return view('listings', [
         'heading' => 'Latest Listings',
-        'listings' => Listing::all(),
+        'listings' => $listing,
     ]);
 });
 
